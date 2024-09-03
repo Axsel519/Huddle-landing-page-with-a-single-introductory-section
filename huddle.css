@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --font-family1: 'Poppins', sans-serif;
+    --font-family2: 'Open Sans', sans-serif;
+}
+
+body{
+    font-family: var(--font-family2);
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    background-image: url("huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Violet);
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: var(--font-family1);
+    font-weight: 600;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vh 2vw;
+}
+
+p{
+    color: #ddd;
+}
+
+button {
+    background-color: white;
+    width: 15vw;
+    border-radius: 3vw;
+    padding: 2vh;
+    border: 2px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 7px rgb(0 0 0 / 57%);
+}
+
+button:active{
+
+    background-color: var(--Soft-Magenta);
+    color: white;
+
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vh 0vw;
+}
+
+.image img{
+    width: 50vw;
+}
+
+.text {
+    padding: 1vh 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 43%;
+}
+
+.icon {
+    margin-left: 75vw;
+    padding: 0vh 3vw;
+    margin-top: -3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+
+.icon-circle:active{
+    color: var(--Soft-Magenta);
+    border: 2px solid var(--Soft-Magenta);
+    
+}
+
+.icon-circle i {
+    font-size: 24px; /* حجم الأيقونة */
+}
+
+@media screen and (max-width:950px) {
+
+    body{
+        background-image: url("huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg");
+        background-size: cover;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 5vh 8vw;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text {
+        padding: 1vh 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2vh;
+        min-width: 100%;
+    }
+
+    .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .icon {
+        margin-left: 0vw;
+        padding: 5vh 3vw;
+        gap: 5vw;
+    }
+
+    button {
+        min-width: 50vw;
+        width: auto;
+        border-radius: 20vw;
+    }
+
+    .image img {
+        width: 100%;
+    }
+    
+}
+
+
+
